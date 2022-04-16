@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!-- head-->
+<head>
+    <!-- head-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +11,27 @@
     <meta name="keywords" content="charlas, eventos, simposios, tecnología, co-work">
     <title>Meet & Coffe</title>
     <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png" />
-    
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--css estilos-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav> <!--comentario para NAV-->
+    <nav class="oscuro">
+        <!--comentario para NAV-->
         <!-- ul>li*5>a-->
         <ul>
-            <li>
-                <a href="#inicio"><img src="assets/img/coffee-cup.svg" width="20" alt="coffe-cup" /></a>
+            <li class="icono">
+                <a href="#inicio"><img src="assets/img/coffee-cup.svg" alt="coffe-cup" /></a>
             </li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#proxima-charla">Próxima Charla</a></li>
@@ -31,7 +40,7 @@
         </ul>
     </nav>
 
-    <header id="inicio">
+    <header id="inicio" class="hero-section">
         <!-- <img src="assets/img/bg-hero.png" width="300" /> -->
         <h1>Descubre lo último en tecnología bebiendo café</h1>
         <h2>Charlas, eventos y simposios sobre tecnología</h2>
@@ -45,21 +54,22 @@
             133,Providencia, Santiago.
         </p>
     </section>
-        <!--Proxima charla-->
-    <section id="proxima-charla">
-        <div>
-            <img src="./assets/img/speaker.jpg" alt="speaker">
-        </div>
-        <div>
-            <h2>Próxima charla</h2>
-            <h3>Bid Data para Noobs</h3>
-            <h4>Rafaela Valdéz</h4>
-            <h5>Data Scientist, PhD Theoretical Physics, Carneige Mellon University.</h5>
-            <p>En esta charla revisaremos las tecnicas y tecnologias que hacen que sea economico hacer frente a los
-                datos a una escala extrema.</p>
+    <!--Proxima charla-->
+    <section class="sweet-brown" id="proxima-charla">
+        <div class="centrado">
+            <img src="./assets/img/speaker.jpg" alt="speaker" class="charla-speaker">
+
+            <div class="charla-texto">
+                <h2>Próxima charla</h2>
+                <h3>Bid Data para Noobs</h3>
+                <h4>Rafaela Valdéz</h4>
+                <h5>Data Scientist, PhD Theoretical Physics, Carneige Mellon University.</h5>
+                <p>En esta charla revisaremos las tecnicas y tecnologias que hacen que sea economico hacer frente a los
+                    datos a una escala extrema.</p>
+            </div>
         </div>
     </section>
-       <!--Eventos anteriores--> 
+    <!--Eventos anteriores-->
     <section id="eventos-anteriores">
         <h2>Eventos anteriores</h2>
         <article>
@@ -75,8 +85,8 @@
             <h3>Scrum sin scream</h3>
         </article>
     </section>
-        <!--footer-->
-    <footer id="contacto">
+    <!--footer-->
+    <footer id="contacto" class="oscuro">
         <a href="http://www.github.com"><i class="fa-brands fa-github-square fa-5x"></i></a>
         <a href="http://www.twitter.com"><i class="fa-brands fa-twitter fa-5x"></i></a>
         <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin fa-5x"></i></a>
@@ -84,4 +94,5 @@
     </footer>
 </body>
 <!-- agrega comentario para trabajo con GIT-->
+
 </html>
